@@ -1,4 +1,5 @@
 import Home from "./PortfolioContainer/Home/Hoem";
+import './App.css';
 
 function App() {
   return (
