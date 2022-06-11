@@ -1,11 +1,12 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import logo from '../../assets/logo.png';
 
 const Navber = (props) => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" sticky="top" variant="dark">
             <Container>
-                <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="/"><img style={{width: "30px"}} src={logo} alt='no internet'/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

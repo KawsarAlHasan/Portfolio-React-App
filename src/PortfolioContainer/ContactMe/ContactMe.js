@@ -1,8 +1,21 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import email from '../../assets/home/email.svg';
+import emailjs from '@emailjs/browser';
 
 const ContactMe = (props) => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_jyyzd1f', 'template_0so019c', e.target, 'Ahn3eG0DFSmux3hfi')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     return (
         <div className='container'>
             <h1 className='text-center mt-5'>CONTACT <span className='text-danger'>ME</span></h1>
@@ -33,20 +46,20 @@ const ContactMe = (props) => {
                 </div>
                 <div className='col-md-6'>
                     <div className='mt-3'>
-                        <Form>
+                        <Form onSubmit={sendEmail}>
                             <Form.Group className="mb-3" controlId="formBasicText">
                                 <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter Name" />
+                                <Form.Control name='name' type="text" placeholder="Enter Name" />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Control name='email' type="email" placeholder="Enter email" />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={3} placeholder="Enter your Message" />
+                                <Form.Control name='message' as="textarea" rows={3} placeholder="Enter your Message" />
                             </Form.Group>
 
                             <Button variant="primary" type="submit" className='rounded-pill px-5'>
