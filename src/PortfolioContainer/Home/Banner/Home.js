@@ -1,8 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Typical from 'react-typical';
-import profileImg from '../../assets/home/profile.jpg';
-import shapeImg from '../../assets/home/shape-bg.png';
+import Button from 'react-bootstrap/Button';
 
 const Home = (props) => {
     return (
@@ -12,19 +11,19 @@ const Home = (props) => {
                     <div className='colz'>
                         <div className='colz-icon'>
                             <a href='https://www.linkedin.com/in/kawsar-al-hasan-1b985420a/'>
-                                <i class="fa-brands fa-linkedin"></i>
+                                <i className="fa-brands fa-linkedin"></i>
                             </a>
                             <a href='https://github.com/KawsarAlHasan'>
-                                <i class="fa-brands fa-github-square"></i>
+                                <i className="fa-brands fa-github-square"></i>
                             </a>
                             <a href='https://web.facebook.com/kawsar.alhasan.58/'>
-                                <i class="fa-brands fa-facebook-square"></i>
+                                <i className="fa-brands fa-facebook-square"></i>
                             </a>
                             <a href='https://twitter.com/kawsaralhasan2'>
-                                <i class="fa-brands fa-twitter-square"></i>
+                                <i className="fa-brands fa-twitter-square"></i>
                             </a>
                             <a href='https://www.instagram.com/kawsar.alhasan.58/'>
-                                <i class="fa-brands fa-instagram-square"></i>
+                                <i className="fa-brands fa-instagram-square"></i>
                             </a>
                         </div>
 
@@ -42,15 +41,15 @@ const Home = (props) => {
                                 {" "}
                                 <Typical
                                     steps={[
-                                        "Full Stact Developer", 1000,
-                                        "React Developer", 1000,
-                                        "MERN Stact Developer", 1000,
-                                        "Web Designner", 1000,
-                                        "Web Developer", 1000,
+                                        "Full Stact Developer 💻", 1000,
+                                        "React Developer 🌐", 1000,
+                                        "MERN Stact Developer 📱", 1000,
+                                        "Web Designner 🔴", 1000,
+                                        "Web Developer 😎", 1000,
                                     ]}
                                     loop={Infinity}
                                 />
-
+                                
                             </h1>
                             <span className='profile-role-tagline'>
                                 Knack of building applications with front and back end operations.
@@ -58,12 +57,12 @@ const Home = (props) => {
                         </span>
                     </div>
                     <div className='profile-options'>
-                        <button className='btn primary-btn'>
-                            {" "}
+                        <Button variant="outline-light" className='primary-text rounded-pill'>
+                        {" "}
                             HIRE ME{" "}
-                        </button>
+                        </Button>
                         <a href='Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf' download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf">
-                            <button className='btn highlighted-btn'>DOWNLOAD RESUME</button>
+                            <Button variant="warning" className='highlighted-btn rounded-pill'>DOWNLOAD RESUME</Button>{' '}
                         </a>
                     </div>
                 </div>
