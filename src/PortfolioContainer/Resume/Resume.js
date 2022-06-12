@@ -22,10 +22,10 @@ const Resume = (props) => {
                         <Col sm={9}>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <div>This is boss</div>
+                                    <div>Comming Soon !</div>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <div>boss is back</div>
+                                    <div>Comming Soon !</div>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>

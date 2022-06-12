@@ -12,12 +12,12 @@ const AboutMe = (props) => {
                     <img className='img-fluid' src={img} alt='no internet' />
                 </div>
                 <div className='col-md-6'>
-                    <p className='m-3 mt-5'>Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.</p>
+                    <p className='m-3 mt-5'>Hi, I'm Kawsar Al Hasan. I'm very passionate and dedicated to my work. My strengths are dedication, a positive attitude, and hard work. I enjoy every step of the developing process from discussion and collaboration.</p>
 
                     <h4 className='ms-3 mt-5'>Here are a Few Highlights:</h4>
-                    <p className='ms-3 mt-2'> <i className="fa-solid fa-circle-arrow-right"></i> Full Stack web and mobile development <br/>
+                    <p className='ms-3 mt-2'> <i className="fa-solid fa-circle-arrow-right"></i> Full Stack web development <br/>
                     <i className="fa-solid fa-circle-arrow-right"></i> Interactive Front End as per the design<br/>
-                    <i className="fa-solid fa-circle-arrow-right"></i> React and React Native<br/>
+                    <i className="fa-solid fa-circle-arrow-right"></i> React JS<br/>
                     <i className="fa-solid fa-circle-arrow-right"></i> Redux for State Mnanagement<br/>
                     <i className="fa-solid fa-circle-arrow-right"></i> Building REST API<br/>
                     <i className="fa-solid fa-circle-arrow-right"></i> Managing database</p>
