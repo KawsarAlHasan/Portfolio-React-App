@@ -11,11 +11,13 @@ const Navber = (props) => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/">HOME</Nav.Link>
-                        <Nav.Link href="#resume">RESUME</Nav.Link>
+                        <Nav.Link href="#aboutMe">ABOUT ME</Nav.Link>
+                        <Nav.Link href='Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf' download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf">GET RESUME</Nav.Link>
+                        <Nav.Link href="#blogs">BLOGS</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link href="#contactMe">CONTACT ME</Nav.Link>
-                        <Nav.Link href="/login">LOGIN</Nav.Link>
+                        <Nav.Link href="/">LOGIN</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

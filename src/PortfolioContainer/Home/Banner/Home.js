@@ -41,9 +41,9 @@ const Home = (props) => {
                                 {" "}
                                 <Typical
                                     steps={[
-                                        "Full Stact Developer 💻", 1000,
+                                        "Full Stact Developer💻", 1000,
                                         "React Developer 🌐", 1000,
-                                        "MERN Stact Developer 📱", 1000,
+                                        "MERN Stact Developer📱", 1000,
                                         "Web Designner 🔴", 1000,
                                         "Web Developer 😎", 1000,
                                     ]}
@@ -57,10 +57,12 @@ const Home = (props) => {
                         </span>
                     </div>
                     <div className='profile-options'>
+                        <a href='#contactMe'>
                         <Button variant="outline-light" className='primary-text rounded-pill'>
                         {" "}
                             HIRE ME{" "}
                         </Button>
+                        </a>
                         <a href='Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf' download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf">
                             <Button variant="warning" className='highlighted-btn rounded-pill'>DOWNLOAD RESUME</Button>{' '}
                         </a>

@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const AboutMe = (props) => {
     return (
-        <div className='container'>
+        <div id='aboutMe' className='container'>
             <h1 className='text-center mt-3'>ABOUT <span className='text-danger'>ME</span></h1>
             <h6 className='text-center mb-3'>My formal Bio Details</h6>
             <div className='row shadow-lg'>
@@ -23,10 +23,12 @@ const AboutMe = (props) => {
                     <i className="fa-solid fa-circle-arrow-right"></i> Managing database</p>
 
                     <div className='profile-options mt-5 m-3'>
+                        <a href='#contactMe'>
                         <Button variant="outline-dark" className='primary-text rounded-pill'>
                         {" "}
                             HIRE ME{" "}
                         </Button>
+                        </a>
                         <a href='Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf' download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf">
                             <Button variant="warning" className='highlighted-btn rounded-pill'>DOWNLOAD RESUME</Button>{' '}
                         </a>

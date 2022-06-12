@@ -51,10 +51,10 @@ const Footer = (props) => {
                                 Products
                             </h6>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">CONTACT</a>
+                                <a href="#!" className="text-reset text-decoration-none">Contact</a>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Tailgates</a>
+                                <a href="#!" className="text-reset text-decoration-none">Blogs</a>
                             </p>
                             <p>
                                 <a href="#!" className="text-reset text-decoration-none">Grilles</a>

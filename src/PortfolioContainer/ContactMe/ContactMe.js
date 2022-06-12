@@ -2,22 +2,25 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import email from '../../assets/home/email.svg';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const ContactMe = (props) => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs.sendForm('service_jyyzd1f', 'template_0so019c', e.target, 'Ahn3eG0DFSmux3hfi')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+            .then((result) => {
+                toast("Success your Message!");
+                window.location.reload(false);
+            }, (error) => {
+                toast.error("Oh no! not success your message");
+                window.location.reload(false);
+            });
+    };
 
     return (
-        <div className='container'>
+        <div id='contactMe' className='container'>
             <h1 className='text-center mt-5'>CONTACT <span className='text-danger'>ME</span></h1>
             <h6 className='text-center mb-3'>Lets Keep In Touch</h6>
             <div className='row m-3 shadow-lg'>
