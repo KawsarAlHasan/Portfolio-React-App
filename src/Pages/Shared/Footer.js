@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => {
     return (
@@ -18,9 +19,6 @@ const Footer = (props) => {
                     <a href="https://twitter.com/kawsaralhasan2" className="me-4 text-reset">
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="https://app.netlify.com/teams/kawsaralhasan/overview" className="me-4 text-reset">
-                        <i className="fab fa-google"></i>
-                    </a>
                     <a href="https://www.instagram.com/kawsar.alhasan.58/" className="me-4 text-reset">
                         <i className="fab fa-instagram"></i>
                     </a>
@@ -36,31 +34,19 @@ const Footer = (props) => {
             <section className="">
                 <div className="container text-center text-md-start mt-5">
                     <div className="row mt-3">
-                        <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <h6 className="text-uppercase fw-bold mb-4">
-                                <i className="fas fa-gem me-3"></i>Company name
-                            </h6>
-                            <p>
-                                Programming Hero <br/>
-                                Complete Web Development Course with Jhankar Mahbub
-                            </p>
-                        </div>
 
                         <div className="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <h6 className="text-uppercase fw-bold mb-4">
-                                Products
+                                Project
                             </h6>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Contact</a>
+                                <Link to="/carParts" className="text-reset text-decoration-none">Cart Parts</Link>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Blogs</a>
+                                <Link to="/carManagement" className="text-reset text-decoration-none">Cart Management</Link>
                             </p>
                             <p>
-                                <a href="#!" className="text-reset text-decoration-none">Grilles</a>
-                            </p>
-                            <p>
-                                <a href="#!" className="text-reset text-decoration-none">Radiator</a>
+                                <Link to="/mobileHunter" className="text-reset text-decoration-none">Mobile Hunter</Link>
                             </p>
                         </div>
 
@@ -69,16 +55,13 @@ const Footer = (props) => {
                                 Useful links
                             </h6>
                             <p>
-                                <a href="/" className="text-reset text-decoration-none">Home</a>
+                                <Link to="/" className="text-reset text-decoration-none">Home</Link>
                             </p>
                             <p>
-                                <a href="/" className="text-reset text-decoration-none">Abuot</a>
+                                <a href="#aboutMe" className="text-reset text-decoration-none">About</a>
                             </p>
                             <p>
-                                <a href="/" className="text-reset text-decoration-none">Project</a>
-                            </p>
-                            <p>
-                                <a href="/login" className="text-reset text-decoration-none">Login</a>
+                                <a href="#project" className="text-reset text-decoration-none">Project</a>
                             </p>
                         </div>
 
@@ -92,13 +75,12 @@ const Footer = (props) => {
                                 kawsaralhasan.420@gmail.com
                             </p>
                             <p><i className="fas fa-phone me-3"></i> +8801785898351</p>
-                            <p><i className="fas fa-print me-3"></i> +8801733755698</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+            <div className="text-center p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
                 © 2022 Copyright:
                 <a className="text-reset fw-bold text-decoration-none" href="https://web.facebook.com/kawsar.alhasan.58/"> Kawsar Al Hasan</a>
             </div>

@@ -5,7 +5,7 @@ import img3 from '../../assets/car3.png';
 
 const Projects = (props) => {
     return (
-        <div className='container'>
+        <div id='project' className='container'>
             <h1 className='text-center mt-5'>My Latest<span className='text-danger'> Projects</span></h1>
             <h6 className='text-center mb-3'>My formal Bio Details</h6>
             <div className='row'>
