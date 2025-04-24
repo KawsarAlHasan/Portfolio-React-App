@@ -1,0 +1,321 @@
+/* Base Styles */
+.ultimate-profile {
+    background: #f8fafc;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  
+  /* Header Section */
+  .profile-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title-gradient {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .section-subtitle {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Grid Layout */
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Profile Cards */
+  .profile-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Card Header */
+  .card-header {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: linear-gradient(90deg, #f8fafc, #f1f5f9);
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .education-card .header-icon {
+    background: #7c3aed;
+  }
+  
+  .certifications-card .header-icon {
+    background: #059669;
+  }
+  
+  .card-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Experience Card */
+  .position h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .position-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.90rem;
+  }
+  
+  .company-link {
+    display: flex;
+    align-items: center;
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .link-icon {
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    opacity: 0.7;
+  }
+  
+
+  
+  .duration {
+    background-color: #dee0e4;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    color: #3f3232;
+    font-weight: 500;
+    margin-right: 0.75rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+
+  .responsibilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .responsibilities li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    color: #334155;
+    line-height: 1.5;
+  }
+  
+  .responsibility-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 6px;
+    margin-right: 0.8rem;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+  }
+  
+  /* Education Card */
+  .degree h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degree-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+  }
+  
+  .education-details {
+    margin-top: 1rem;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #ecfdf5;
+    color: #059669;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .specializations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .specializations li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #475569;
+  }
+  
+  .specializations li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #7c3aed;
+    font-weight: bold;
+  }
+  
+  /* Certifications Card */
+  .certificate h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .certificate-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+  }
+  
+  .instructor {
+    font-style: italic;
+    font-size: 13px;
+    color: #475569;
+  }
+  
+  .certificate-divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 1rem 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 1rem;
+    }
+    
+    .card-body {
+      padding: 1.25rem;
+    }
+    
+    .position-meta, .degree-meta {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+
+
+
+  /* Icon Enhancements */
+.title-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2em;
+    vertical-align: middle;
+  }
+  
+  .position-icon, 
+  .degree-icon {
+    margin-right: 0.5rem;
+    color: inherit;
+  }
+  
+  .badge-icon {
+    margin-right: 0.3rem;
+    font-size: 0.9em;
+  }
+  
+  .specializations li svg {
+    margin-right: 0.5rem;
+    color: #7c3aed;
+    font-size: 0.8em;
+  }
+  
+  .certificate h4 svg {
+    margin-right: 0.5rem;
+    color: #059669;
+  }
+  
+  /* Responsive Icon Sizes */
+  @media (max-width: 768px) {
+    .title-icon {
+      font-size: 1em;
+    }
+    
+    .position-icon,
+    .degree-icon {
+      font-size: 0.9em;
+    }
+  }

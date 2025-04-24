@@ -68,7 +68,7 @@
 .profile-picture-background{
     height: 92%;
     width: 92%;
-    background-image: url("../../../assets/home/profile.jpg");
+    background-image: url("../../../assets/home/profile_pic.jpg");
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;

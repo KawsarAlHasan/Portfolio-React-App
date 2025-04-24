@@ -2,17 +2,19 @@ import React from "react";
 import AboutMe from "./AboutMe/AboutMe";
 import ContactMe from "./ContactMe/ContactMe";
 import MainHome from "./Home/MainHome";
-import Projects from "./Projects/Projects";
-import Resume from "./Resume/Resume";
+import SkillSection from "./skillSection/SkillSection";
+import Project from "./project/Project";
+import EducationExperience from "./educationExperience/EducationExperience";
 
 const PortfolioContainer = (props) => {
   return (
     <div>
-      <MainHome></MainHome>
-      <AboutMe></AboutMe>
-      <Resume></Resume>
-      <Projects></Projects>
-      <ContactMe></ContactMe>
+      <MainHome />
+      <AboutMe />
+      <SkillSection />
+      <EducationExperience />
+      <Project />
+      <ContactMe />
     </div>
   );
 };
