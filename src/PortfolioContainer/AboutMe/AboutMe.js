@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/home/profile.jpg";
+import img from "../../assets/home/profile_1.png";
 import Button from "react-bootstrap/Button";
 
 const AboutMe = (props) => {
@@ -54,8 +54,8 @@ const AboutMe = (props) => {
               </Button>
             </a>
             <a
-              href="Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf"
-              download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf"
+              href="resume_of_md_kawsar.pdf"
+              download="resume_of_md_kawsar.pdf"
             >
               <Button
                 variant="warning"

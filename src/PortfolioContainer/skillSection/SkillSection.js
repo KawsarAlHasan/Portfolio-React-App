@@ -1,4 +1,7 @@
 import React from "react";
+import tailwindLogo from "../../assets/tailwind_css.png";
+import daisyuiLogo from "../../assets/daisyui.png";
+import restApiLogo from "../../assets/rest_api.png";
 
 const SkillsSection = () => {
   // Skill data with icons (using devicon CDN)
@@ -26,7 +29,7 @@ const SkillsSection = () => {
       },
       {
         name: "Tailwind CSS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        icon: tailwindLogo,
       },
       {
         name: "Bootstrap",
@@ -34,7 +37,7 @@ const SkillsSection = () => {
       },
       {
         name: "DaisyUI",
-        icon: "https://daisyui.com/images/daisyui-logo/daisyui-logomark.svg",
+        icon: daisyuiLogo,
       },
     ],
     backend: [
@@ -48,11 +51,15 @@ const SkillsSection = () => {
       },
       {
         name: "RESTful APIs",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apiary/apiary-original.svg",
+        icon: restApiLogo,
       },
       {
         name: "GraphQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
+      {
+        name: "Socket.io",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
       },
     ],
     database: [
@@ -73,24 +80,6 @@ const SkillsSection = () => {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
     ],
-    other: [
-      {
-        name: "Socket.io",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-      },
-      {
-        name: "Git",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      },
-      {
-        name: "Responsive Design",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/responsive/responsive-original.svg",
-      },
-      {
-        name: "UI/UX",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-      },
-    ],
   };
 
   return (
@@ -105,7 +94,7 @@ const SkillsSection = () => {
         {/* All Skills Grid */}
         <div className="row g-4">
           {/* Frontend Skills */}
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-4">
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="d-flex align-items-center justify-content-center mb-4">
@@ -117,14 +106,14 @@ const SkillsSection = () => {
                 <div className="d-flex flex-wrap justify-content-center gap-3">
                   {skills.frontend.map((skill, index) => (
                     <div key={index} className="skill-item">
-                      <div className="bg-white p-2 rounded shadow-sm hover-effect ">
+                      <div className="bg-white p-2 rounded shadow-sm hover-effect d-flex gap-2">
                         <img
                           src={skill.icon}
                           alt={skill.name}
-                          width="30"
-                          height="30"
+                          width="25"
+                          height="25"
                         />
-                        <span className="d-block mt-2 small">{skill.name}</span>
+                        <h6> {skill.name}</h6>
                       </div>
                     </div>
                   ))}
@@ -134,7 +123,7 @@ const SkillsSection = () => {
           </div>
 
           {/* Backend Skills */}
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-4">
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="d-flex align-items-center justify-content-center mb-4">
@@ -146,14 +135,14 @@ const SkillsSection = () => {
                 <div className="d-flex flex-wrap justify-content-center gap-3">
                   {skills.backend.map((skill, index) => (
                     <div key={index} className="skill-item">
-                      <div className="bg-white p-2 rounded shadow-sm hover-effect">
+                      <div className="bg-white p-2 rounded shadow-sm hover-effect d-flex gap-2">
                         <img
                           src={skill.icon}
                           alt={skill.name}
-                          width="30"
-                          height="30"
+                          width="25"
+                          height="25"
                         />
-                        <span className="d-block mt-2 small">{skill.name}</span>
+                        <h6>{skill.name}</h6>
                       </div>
                     </div>
                   ))}
@@ -163,7 +152,7 @@ const SkillsSection = () => {
           </div>
 
           {/* Database Skills */}
-          <div className="col-md-6 col-lg-3">
+          <div className="col-md-6 col-lg-4">
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center">
                 <div className="d-flex align-items-center justify-content-center mb-4">
@@ -175,43 +164,14 @@ const SkillsSection = () => {
                 <div className="d-flex flex-wrap justify-content-center gap-3">
                   {skills.database.map((skill, index) => (
                     <div key={index} className="skill-item">
-                      <div className="bg-white p-2 rounded shadow-sm hover-effect">
+                      <div className="bg-white p-2 rounded shadow-sm hover-effect d-flex gap-2">
                         <img
                           src={skill.icon}
                           alt={skill.name}
                           width="30"
                           height="30"
                         />
-                        <span className="d-block mt-2 small">{skill.name}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Other Skills */}
-          <div className="col-md-6 col-lg-3">
-            <div className="card h-100 border-0 shadow-sm">
-              <div className="card-body text-center">
-                <div className="d-flex align-items-center justify-content-center mb-4">
-                  <div className="bg-warning bg-opacity-10 p-2 rounded me-3">
-                    <i className="fas fa-cogs text-warning fs-3"></i>
-                  </div>
-                  <h3 className="h5 mb-0">Other</h3>
-                </div>
-                <div className="d-flex flex-wrap justify-content-center gap-3">
-                  {skills.other.map((skill, index) => (
-                    <div key={index} className="skill-item">
-                      <div className="bg-white p-2 rounded shadow-sm hover-effect">
-                        <img
-                          src={skill.icon}
-                          alt={skill.name}
-                          width="30"
-                          height="30"
-                        />
-                        <span className="d-block mt-2 small">{skill.name}</span>
+                        <h6>{skill.name}</h6>
                       </div>
                     </div>
                   ))}

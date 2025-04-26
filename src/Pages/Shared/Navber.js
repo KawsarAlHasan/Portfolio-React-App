@@ -20,8 +20,8 @@ const Navber = (props) => {
             </Nav.Link>
             <Nav.Link href="#aboutMe">ABOUT ME</Nav.Link>
             <Nav.Link
-              href="Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf"
-              download="resume Kawsar_Al_Hasan_JUNIOR_FULL_STACK_DEVELOPER.pdf"
+              href="resume_of_md_kawsar.pdf"
+              download="resume_of_md_kawsar.pdf"
             >
               GET RESUME
             </Nav.Link>

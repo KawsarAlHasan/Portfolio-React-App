@@ -1,13 +1,127 @@
-#skills {
-    scroll-margin-top: 80px;
+.elegant-skills {
+  padding: 5rem 0;
+  background: #ffffff;
+  color: #2d3748;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-group {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.skill-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+  border-color: #cbd5e0;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.group-icon {
+  width: 40px;
+  height: 40px;
+  background: #edf2f7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #4a5568;
+}
+
+.skill-group h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #2d3748;
+}
+
+.skill-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.skill-items li {
+  font-size: 1rem;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.skill-bullet {
+  color: #718096;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
   
-  .card-title {
-    color: #0d6efd;
+  .section-title {
+    font-size: 2rem;
   }
   
-  .badge {
-    font-size: 0.9rem;
-    border-radius: 12px;
+  .skill-group {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
   }
   
+  .section-header {
+    margin-bottom: 3rem;
+  }
+}
