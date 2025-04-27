@@ -7,21 +7,30 @@ import {
   FaMobile,
 } from "react-icons/fa";
 import "./Project.css";
+import garirhat from "../../assets/Screenshot 2025-04-27 164817.png";
+import twostarfasion from "../../assets/Screenshot 2024-07-05 193237.png";
 
 const Project = () => {
   // Demo project data
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "GarirHat – Online Car Marketplace",
       description:
-        "A full-featured online store with product listings, cart functionality, and secure checkout process.",
-      technologies: ["React", "Node.js", "MongoDB", "Redux", "Stripe API"],
-      image:
-        "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      frontend: "https://github.com/yourusername/ecommerce-platform",
-      backend: "https://github.com/yourusername/ecommerce-platform",
-      live: "https://yourecommerceapp.com",
+        "A modern full-stack platform built for buying and selling vehicles. GarirHat offers a seamless experience for users to post ads, browse listings, and connect with sellers. It includes real-time updates using Socket.io, detailed search filters, and a smooth UI powered by React and Tailwind CSS.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "Socket.io",
+        "Firebase",
+        "Tailwind",
+        "Ant Design",
+      ],
+      image: garirhat,
+
+      live: "https://garirhat.com",
       category: "fullstack",
       features: [
         "User authentication & authorization",
@@ -33,15 +42,24 @@ const Project = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Two Star Fashion",
       description:
-        "A collaborative task management application with real-time updates and team functionality.",
-      technologies: ["React", "Firebase", "Material UI", "Socket.io"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      frontend: "https://github.com/yourusername/task-manager",
-      live: "https://yourtaskapp.com",
-      category: "frontend",
+        "Developed a web application with distinct dashboards for Users and Admins. Implemented authentication via email and Gmail. Admins can manage products, orders, and assign roles, while users can purchase products, submit reviews, and track their order status.",
+      technologies: [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Bootstrap",
+      ],
+      image: twostarfasion,
+      frontend:
+        "https://github.com/KawsarAlHasan/two-start-manufacturer-frontend",
+      live: "https://two-start-manufacturer-frontend.vercel.app/",
+      category: "fullstack",
+      backend:
+        "https://github.com/KawsarAlHasan/manufacturer-website-server-side",
       features: [
         "Drag-and-drop interface",
         "Real-time collaboration",
@@ -52,21 +70,30 @@ const Project = () => {
     },
     {
       id: 3,
-      title: "RESTful API Service",
+      title: "Warehouse Management",
       description:
-        "A scalable backend service for mobile applications with authentication and data processing.",
-      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Redis"],
+        "Designed a Warehouse Management System to efficiently track inventory, manage stock levels, process orders, and streamline warehouse operations for improved accuracy and productivity.A scalable backend service for mobile applications with authentication and data processing.",
+      technologies: [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Bootstrap",
+      ],
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      backend: "https://github.com/yourusername/api-service",
-      live: "https://api.yourservice.com/docs",
-      category: "backend",
+      frontend: "https://github.com/KawsarAlHasan/Car-Management-client",
+      backend: "https://github.com/KawsarAlHasan/Car-Management-server-side",
+      live: "https://warehouse-management-react-app.web.app",
+      category: "fullstack",
       features: [
-        "JWT authentication",
-        "Rate limiting",
-        "Caching layer",
-        "Documentation with Swagger",
-        "Error tracking",
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Bootstrap",
       ],
     },
   ];
